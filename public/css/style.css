@@ -57,6 +57,9 @@ footer {
   border-left: 3px solid #e48c3f;
   border-right: 3px solid #e48c3f;
 }
+.introjs-prevbutton {
+  display: none !important;
+}
 .introjs-tooltip {
   background-color: #e48c3f;
   color: #fff;
@@ -100,6 +103,8 @@ footer {
 }
 .iconsTop {
   display: flex;
+  width: 780px;
+  margin: 0px;
   justify-content: flex-end;
 }
 .iconsTop img {
@@ -120,8 +125,10 @@ footer {
 }
 .head1 {
   background-color: #1b2129;
-  margin-top: -16px;
+  margin-top: -16px !important;
   height: 49px;
+  display: flex;
+  justify-content: space-between;
 }
 .step2img {
   height: 190px !important;
@@ -248,6 +255,10 @@ footer {
 .margin-top {
   margin-top: 160px !important;
 }
+.row {
+  margin: 0;
+  padding: 0;
+}
 .select-rigth {
   width: 70%;
   float: right;
@@ -268,7 +279,7 @@ footer {
   height: 35px;
   width: 75px;
   position: fixed;
-  z-index: 5000;
+  z-index: 500;
   margin-top: 535px;
   margin-left: 420px;
 }
@@ -286,25 +297,6 @@ footer {
 }
 .introjs-tooltiptext ul li {
   padding-bottom: 10px;
-}
-.tip1 {
-  background-image: url("../assets/img/bg-slide1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  padding: 40px;
-  height: 490px;
-  background-color: #1b77af;
-  position: relative;
-}
-.tip2 {
-  background-image: url("../assets/img/bg-slide2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  padding: 40px;
-  height: 490px;
-  background-color: #1b77af;
 }
 .textBox {
   height: 300px;

@@ -1,17 +1,21 @@
 
-$("#link1, .list1").mouseover(function(){
+$(".menuEnd button").click(function(){
+  window.location = 'index.html';
+})
+
+$("#link1, .list1").click(function(){
     $(".list1").addClass("show");
   });
   $("#link1").mouseout(function(){
     $(".list1").removeClass("show");
   });
-  $("#link2").mouseover(function(){
+  $("#link2").click(function(){
     $(".list2").addClass("show");
   });
   $("#link2").mouseout(function(){
     $(".list2").removeClass("show");
   });
-  $("#link3").mouseover(function(){
+  $("#link3").click(function(){
     $(".list3").addClass("show");
   });
   $("#link3").mouseout(function(){
@@ -30,7 +34,8 @@ $("#link1, .list1").mouseover(function(){
       {
         element: '.step1',
         intro: '<ul><li>Employee desktop all in a single pane of glass</li><li>Audio and employee desktop recorded automatically</li><li>Employee selects desktop screen to share</li></ul>',
-        position: 'top'
+        position: 'top',
+        hidePrev: true,
       },
       {
         element: '.step2',
@@ -72,9 +77,8 @@ $("#link1, .list1").mouseover(function(){
         intro: '<ul><li>Chat message needing response Employee accepts chat and sees</li><li>Employee <b>accepts chat and sees preview</b></li></ul>',
         position: 'right'
       },
-      
-    ]
-    
+    ],
+    exitOnOverlayClick: false
   })
 
   intro.onchange(function(targetElement) {
@@ -126,8 +130,10 @@ $("#link1, .list1").mouseover(function(){
     }
     if (this._currentStep === 8) {
       $(".step8").css('border', '0px solid #ea6834');
-      $(".sectLeft-2").css('display', 'block')
+      $(".sectLeft-2").css('display', 'block');
+      $(".btnaction").addClass('animate__fadeInDown');
     }
   });
 
+  
 
